@@ -20,7 +20,7 @@ Adapt the existing **Aegis Sentinel CIDR** Next.js web dashboard design language
 1. **Bottom tab vs drawer navigation?** The web uses a sidebar with 9 nav items + settings + logout. On mobile, a **bottom tab navigator** (4–5 tabs) with a "More" tab is more ergonomic. Do you prefer a **drawer** to show all items, or a **bottom tab** with grouping?
 2. **Which dashboard pages are priority?** The web has 11 dashboard pages: Overview, Alerts, Watchtower, Logs, Workflows, Prism, Oracle (AI chat), Vault, Nexus, Audit Logs, Settings. Should we build all in the first pass, or start with a core subset (e.g., Overview, Alerts, Logs, Oracle, Settings)?
 3. **Push notifications?** Should we integrate `expo-notifications` for real-time alert push notifications from the start?
-4. **Same backend API base URL?** Confirm the mobile app will hit the same `/api/cidr/*` backend. Any CORS / cookie adjustments needed for mobile (the web uses `credentials: 'include'`; mobile will need token-only auth via `Authorization: Bearer`).
+4. **Same backend API base URL?** Confirm the mobile app will hit the same `/api/aegis/v1/*` backend. Any CORS / cookie adjustments needed for mobile (the web uses `credentials: 'include'`; mobile will need token-only auth via `Authorization: Bearer`).
 
 ---
 
