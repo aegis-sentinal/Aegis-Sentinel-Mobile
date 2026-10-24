@@ -2,7 +2,10 @@ import axios from 'axios';
 import Constants from 'expo-constants';
 import { getAccessToken, getRefreshToken, getOrgId, getWorkspaceId, setAuthTokens, clearAuthTokens } from '../auth-tokens';
 
-const API_HOST = Constants.expoConfig?.extra?.apiUrl || 'http://localhost:8080';
+const API_HOST =
+  process.env.EXPO_PUBLIC_API_URL ||
+  Constants.expoConfig?.extra?.apiUrl ||
+  'https://aegis.zeyo.xyz';
 export const BASE_URL = API_HOST.endsWith('/api/aegis/v1') 
   ? API_HOST 
   : `${API_HOST.replace(/\/$/, '')}/api/aegis/v1`;

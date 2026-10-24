@@ -33,6 +33,7 @@
       "expo-font"
     ],
     "extra": {
+      "apiUrl": "https://aegis.zeyo.xyz",
       "router": {},
       "eas": {
         "projectId": "d9b41db6-894c-4318-b341-f2070c8684bf"
